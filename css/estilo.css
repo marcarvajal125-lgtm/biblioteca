@@ -1,0 +1,448 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+    min-height:100vh;
+    padding:30px;
+
+    background:
+    radial-gradient(circle at top left,
+    #004b5a 0%,
+    #02141d 35%,
+    #000000 100%);
+
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* ==========================
+   TITULO
+========================== */
+
+h1{
+    text-align:center;
+    font-size:5rem;
+    margin-bottom:50px;
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff,
+    0 0 50px #00ffff,
+    0 0 100px #00ffff;
+}
+
+/* ==========================
+   ESTADISTICAS
+========================== */
+
+.estadisticas{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.tarjeta-est{
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border-radius:30px;
+
+    border:1px solid rgba(0,255,255,.25);
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.15);
+}
+
+.tarjeta-est h3{
+    color:white;
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.tarjeta-est span{
+    font-size:3.2rem;
+    color:#00ffff;
+    font-weight:bold;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+/* ==========================
+   BUSCADOR Y BOTONES
+========================== */
+
+.herramientas{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.buscador{
+    display:flex;
+    align-items:center;
+
+    width:420px;
+    max-width:100%;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,255,255,.25);
+
+    border-radius:50px;
+
+    padding:14px 20px;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.15);
+}
+
+.lupa{
+    font-size:1.4rem;
+    color:#00ffff;
+    margin-right:12px;
+}
+
+.buscador input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    color:white;
+    font-size:1rem;
+}
+
+.buscador input::placeholder{
+    color:rgba(255,255,255,.6);
+}
+
+.btn-personajes{
+    text-decoration:none;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,255,255,.25);
+
+    color:#00ffff;
+
+    padding:14px 25px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+    box-shadow:
+    0 0 15px rgba(0,255,255,.15);
+}
+
+.btn-personajes:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px rgba(0,255,255,.4);
+}
+
+/* ==========================
+   BIBLIOTECA
+========================== */
+
+.biblioteca{
+    display:grid;
+    grid-template-columns:repeat(8,minmax(0,1fr));
+    gap:18px;
+}
+
+/* ==========================
+   LIBROS
+========================== */
+
+.libro{
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(0,255,255,.25);
+
+    padding:12px;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 0 15px rgba(0,255,255,.12);
+}
+
+.libro:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.4),
+    0 0 40px rgba(0,255,255,.25);
+}
+
+/* ==========================
+   PORTADAS
+========================== */
+
+.libro img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 0 10px rgba(0,255,255,.15);
+}
+
+/* ==========================
+   NOMBRE LIBRO
+========================== */
+
+.nombre{
+    text-align:center;
+
+    margin-top:12px;
+    margin-bottom:12px;
+
+    color:#00ffff;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    text-shadow:
+    0 0 10px #00ffff;
+}
+
+/* ==========================
+   CHECKS
+========================== */
+
+.estado{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.estado label{
+    text-align:center;
+
+    padding:10px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(0,255,255,.15);
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.estado label:hover{
+    background:rgba(0,255,255,.08);
+}
+
+.estado input{
+    accent-color:#00ff99;
+    transform:scale(1.1);
+    margin-right:5px;
+}
+
+/* ==========================
+   LEYENDO
+========================== */
+
+.libro:has(.proceso:checked){
+    border:1px solid #00ffff;
+
+    box-shadow:
+    0 0 15px #00ffff,
+    0 0 30px rgba(0,255,255,.4);
+}
+
+/* ==========================
+   TERMINADO
+========================== */
+
+.libro:has(.terminado:checked){
+    border:2px solid #00ff99;
+
+    box-shadow:
+    0 0 20px #00ff99,
+    0 0 40px #00ff99,
+    0 0 80px rgba(0,255,153,.8);
+
+    animation:brillo 2s infinite alternate;
+}
+
+.libro:has(.terminado:checked) img{
+    box-shadow:
+    0 0 15px #00ff99,
+    0 0 35px #00ff99;
+}
+
+.libro:has(.terminado:checked) .nombre{
+    color:#00ff99;
+
+    text-shadow:
+    0 0 10px #00ff99,
+    0 0 20px #00ff99;
+}
+
+/* ==========================
+   ANIMACION
+========================== */
+
+@keyframes brillo{
+
+    from{
+        box-shadow:
+        0 0 15px #00ff99,
+        0 0 40px rgba(0,255,153,.5);
+    }
+
+    to{
+        box-shadow:
+        0 0 30px #00ff99,
+        0 0 60px #00ff99,
+        0 0 120px rgba(0,255,153,.9);
+    }
+}
+
+/* ==========================
+   SCROLL
+========================== */
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:#000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(
+    #00ffff,
+    #00ff99);
+
+    border-radius:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1800px){
+    .biblioteca{
+        grid-template-columns:repeat(6,1fr);
+    }
+}
+
+@media(max-width:1500px){
+    .biblioteca{
+        grid-template-columns:repeat(5,1fr);
+    }
+}
+
+@media(max-width:1200px){
+
+    .biblioteca{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .libro img{
+        height:260px;
+    }
+}
+
+@media(max-width:900px){
+
+    .biblioteca{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .herramientas{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:700px){
+
+    .estadisticas{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .biblioteca{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    h1{
+        font-size:3rem;
+    }
+}
+
+@media(max-width:500px){
+
+    .estadisticas{
+        grid-template-columns:1fr;
+    }
+
+    .biblioteca{
+        grid-template-columns:1fr;
+    }
+
+    .buscador{
+        width:100%;
+    }
+
+    .btn-personajes{
+        width:100%;
+        text-align:center;
+    }
+}

@@ -1,0 +1,541 @@
+
+/* ==========================================
+   LIBRO.CSS COMPLETO
+   ESTILO CRISTAL + NEÓN
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    padding:40px;
+
+    background:
+    radial-gradient(
+    circle at top left,
+    #005f73 0%,
+    #02141d 35%,
+    #000000 100%);
+
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* ==========================================
+   BOTÓN VOLVER
+========================================== */
+
+.volver{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    padding:14px 25px;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:
+    1px solid rgba(0,255,255,.25);
+
+    box-shadow:
+    0 0 15px rgba(0,255,255,.2);
+
+    transition:.3s;
+}
+
+.volver:hover{
+
+    color:#00ffff;
+
+    transform:translateX(-5px);
+
+    box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px rgba(0,255,255,.5);
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+========================================== */
+
+.contenedor{
+
+    max-width:1700px;
+
+    margin:auto;
+}
+
+/* ==========================================
+   CABECERA LIBRO
+========================================== */
+
+.cabecera{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:flex-start;
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(0,255,255,.20);
+
+    padding:30px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,.15);
+
+    margin-bottom:40px;
+}
+
+/* ==========================================
+   PORTADA
+========================================== */
+
+.portada{
+
+    width:350px;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    border:
+    2px solid rgba(0,255,255,.25);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.3);
+}
+
+/* ==========================================
+   INFORMACIÓN
+========================================== */
+
+.info{
+
+    flex:1;
+}
+
+.info h1{
+
+    color:#00ffff;
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 15px #00ffff,
+    0 0 30px #00ffff;
+}
+
+.sinopsis{
+
+    font-size:1.2rem;
+
+    line-height:1.9;
+
+    color:#e8e8e8;
+
+    margin-bottom:35px;
+}
+
+/* ==========================================
+   AUTOR
+========================================== */
+
+.autor{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    width:max-content;
+
+    text-decoration:none;
+
+    padding:15px 25px;
+
+    border-radius:100px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(0,255,255,.20);
+
+    transition:.3s;
+
+    margin-bottom:25px;
+}
+
+.autor:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.5);
+}
+
+.autor img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:
+    2px solid #00ffff;
+
+    box-shadow:
+    0 0 15px rgba(0,255,255,.4);
+}
+
+.autor span{
+
+    color:white;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+}
+
+/* ==========================================
+   BOTÓN PDF
+========================================== */
+
+.btn-pdf{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    padding:15px 35px;
+
+    border-radius:18px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #00ffff,
+    #00ff99);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.4);
+
+    transition:.3s;
+}
+
+.btn-pdf:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 25px #00ffff,
+    0 0 50px rgba(0,255,255,.8);
+}
+
+/* ==========================================
+   BLOQUE LECTURA
+========================================== */
+
+.lectura{
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(0,255,255,.20);
+
+    padding:35px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,.15);
+}
+
+.lectura h2{
+
+    text-align:center;
+
+    color:#00ffff;
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 15px #00ffff;
+}
+
+/* ==========================================
+   BARRA DE PROGRESO
+========================================== */
+
+.barra-fondo{
+
+    width:100%;
+
+    height:45px;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.10);
+
+    margin-bottom:25px;
+}
+
+.barra{
+
+    width:0%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    90deg,
+    #00ffff,
+    #00ff99);
+
+    transition:.6s;
+}
+
+.completo{
+
+    animation:
+    brilloCompleto 1.2s infinite alternate;
+}
+
+@keyframes brilloCompleto{
+
+    from{
+
+        box-shadow:
+        0 0 20px #00ff99,
+        0 0 40px rgba(0,255,153,.5);
+    }
+
+    to{
+
+        box-shadow:
+        0 0 30px #00ff99,
+        0 0 60px #00ff99,
+        0 0 120px rgba(0,255,153,.9);
+    }
+}
+
+/* ==========================================
+   MENSAJE LEÍDO
+========================================== */
+
+.leido{
+
+    display:none;
+
+    text-align:center;
+
+    color:#00ff99;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 15px #00ff99,
+    0 0 30px #00ff99,
+    0 0 60px #00ff99;
+}
+
+/* ==========================================
+   CAPÍTULOS
+========================================== */
+
+.capitulos{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:15px;
+}
+
+.capitulos label{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(0,255,255,.15);
+
+    border-radius:15px;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.capitulos label:hover{
+
+    background:
+    rgba(0,255,255,.08);
+
+    transform:translateY(-2px);
+}
+
+.capitulos input{
+
+    accent-color:#00ff99;
+
+    transform:scale(1.2);
+
+    margin-right:10px;
+}
+
+/* ==========================================
+   SCROLL
+========================================== */
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:#000;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+    #00ffff,
+    #00ff99);
+
+    border-radius:20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+    .cabecera{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .info h1{
+
+        font-size:3rem;
+    }
+}
+
+@media(max-width:900px){
+
+    .capitulos{
+
+        grid-template-columns:1fr;
+    }
+
+    .portada{
+
+        width:280px;
+
+        height:420px;
+    }
+}
+
+@media(max-width:600px){
+
+    body{
+
+        padding:20px;
+    }
+
+    .info h1{
+
+        font-size:2.3rem;
+    }
+
+    .portada{
+
+        width:240px;
+
+        height:360px;
+    }
+
+    .autor{
+
+        width:100%;
+    }
+}
